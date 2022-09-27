@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+\usepackage{graphicx}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{ALESSANDRO TAMAI}
+\tagline{Mathematician}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{4.5cm}{mod3}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  Born in Treviso on February 24, 1995.   \linebreak \linebreak
+  \email{tamaiatwork@gmail.com }
+  \phone{+39 3469506415}
+  \location{ Trieste , Italy  }
+ % \homepage{https://yogs447.blogspot.com/}
+  \linebreak
+  \linkedin{https://www.linkedin.com/in/alessandro-tamai-6b8719203/}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+
+
+\
+
+\cvsection[page1sidebar]{Education}
+
+\cvevent{Master's degree in Mathematics} {   \includegraphics[scale=0.028]{logo} University of Trieste  }{2017-2020}{Trieste , Italy } 
+\textsc{Final Mark}: 110/110 (summa cum laude)
+\divider
+\\
+\cvevent{ Bachelor's degree in Mathematics}{   \includegraphics[scale=0.028]{logo} University of Trieste}{2014-2017}{Trieste , Italy }
+\textsc{Final Mark}: 104/110
+\begin{itemize}
+\item   \includegraphics[scale=0.063]{UCL}  Erasmus program at "UCL: Universit\'e   Catholique de Louvain-La-Neuve": \cvevent{}{}{Sept. 2017- Feb. 2017}{ Louvain-la-Neuve , Belgium}
+\end{itemize}
+\divider
+\\
+\cvevent{Diploma of Perito Chimico}{Istituto Superiore Statale
+"Giorgi-Fermi" }{2009-2014}{Treviso , Italy}
+\textsc{Final Mark}: 78/ 100
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\cvsection{Dissertation Work}
+\cvevent{Bachelor Thesis}{  Introduzione alla Teoria delle Perturbazioni di Sistemi Hamiltoniani Autonomi }{}{}
+\begin{itemize}
+\item  Reminder on symplectic geometry and its relation with Hamiltonian systems.
+\item Liouville-Arnol'd Theorem and its consequences.
+\item Introduction to perturbation theory with a focus on  Poincar\'e's negative results.
+\item  Summary of the historical contrast between ergotic theory and perturbation theory in  relation to Fermi's computational experiments.
+\item KAM Theorem and its similarities with Liouville-Arnol'd Theorem.
+\end{itemize}
+
+\cvevent{Master Thesis}{Singular Solutions of Rolling Balls Model: a Topological View}{}{}
+\begin{itemize}
+\item Lie groups and semisimple Lie algebras classification with a focus on the $G_2$ group.
+\item Division algebras: quaternions and their relations with the rotation of the three dimensional space; the octonions and their split form.
+\item The group $G_2$ as automorphism group of octonions and split octonions as conseguence of the Lie group classification.
+\item Sub-Riemannian geometry and  singular solutions in relation to the rolling balls problem.
+\item Overview on the most recent results: relations between the model and quaternions, octonions and the $G_2$ group.  
+
+\item Presentation of the research work's results: description of the geometric spaces of singular solutions, their topological properties and their relation with lens spaces.
+
+
+
+\end{itemize}
+	
+\
+\\
+
+
+\cvsection[page2sidebar]{University Projects }
+\begin{itemize}
+\item "Flux Analysis for Competing Firms": 
+
+\textit{(Final exam of "Stochastic Modelling and Simulation" course)}
+
+Given a set of consumers and firms distributed on a geographic region, can we estimate how the consumers' choice depends on some given parameters? In the project I try to answer this question by design a mathematical model based on discrete Markov's chains and analyzing the simulations made by it python implementation.
+\end{itemize}
+
+
+
+\cvsection{Scientific Work}
+
+\cvevent{"Singular Solutions of Rolling Balls Problem" }{  \includegraphics[scale=0.018]{SISSA}  Geometric Structures Research Seminar}{January 12, 2021}{SISSA, Trieste, Italy}
+\begin{itemize}
+\item  Speaker.
+\end{itemize}
+https://sites.google.com/view/geometric-structures/
+\
+\\
+\divider
+\cvevent{"Singular Solutions of Rolling Balls Problem" }{  \includegraphics[scale=0.065]{UPC}  Geometry and Dynamical System Group Seminar}{April 19 2021}{UPC, Barcelona, Spain}
+\begin{itemize}
+\item  Speaker.
+\end{itemize}
+
+
+
+\cvsection{Scholarships}
+
+\cvevent{ }{   \includegraphics[scale=0.018]{SISSA} Postgraduate Fellowship }{April 2021 - July 2021}{SISSA, Trieste, Italy}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\cvsection{Work Experience}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvevent{Exerciser of  "Geometria 1"  (  double assignment, ch. A,B  ) }{Universita' degli Studi di Trieste}{ October 2019- January 2020  }{Trieste (Italia)}
+
+\begin{itemize}
+\item  Exercises sessions on the course's topics.
+\item  Correction of practice tests.
+\end{itemize}
+
+
+\cvevent{Exerciser of "Geometria 3B" }{Universita' degli Studi di Trieste}{March 2019- June 2019 }{Trieste (Italia)}
+
+\begin{itemize}
+\item  Exercises sessions on the course's topics.
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\cvevent{Exerciser of  "Analisi 1"  (double assignment, ch. A,B  ) }{Universita' degli Studi di Trieste}{        October 2018- January 2019}{Trieste (Italia)}
+
+\begin{itemize}
+\item  Exercises sessions on the course's topics.
+\item  Correction of practice tests.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\cvevent{MaxMeyer Promoter}{Leroy Merlin}{March 2014 - June 2014 }{San Biagio di Callalta, Italy}
+\begin{itemize}
+\item Preparation of paints through dedicated instrumentation.
+\item Shop assistant work in paints, hardware and building material aisle.  
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\clearpage
+
+
+\end{document}
